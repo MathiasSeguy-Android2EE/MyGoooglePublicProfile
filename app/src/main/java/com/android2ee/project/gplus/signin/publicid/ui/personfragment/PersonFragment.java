@@ -1,7 +1,7 @@
 package com.android2ee.project.gplus.signin.publicid.ui.personfragment;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -277,7 +277,7 @@ public class PersonFragment extends Fragment {
 	/******************************************************************************************/
 	/*
 	 * (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup,
+	 * @see androidx.fragment.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup,
 	 * android.os.Bundle)
 	 */
 	@Override
@@ -353,7 +353,7 @@ public class PersonFragment extends Fragment {
 
 	/*
 	 * (non-Javadoc)
-	 * @see android.support.v4.app.Fragment#onActivityCreated(android.os.Bundle)
+	 * @see androidx.fragment.app.Fragment#onActivityCreated(android.os.Bundle)
 	 */
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {

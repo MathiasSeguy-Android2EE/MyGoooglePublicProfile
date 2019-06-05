@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.content.IntentSender.SendIntentException;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -185,7 +185,7 @@ public class MainActivity extends ActionBarActivity implements  GoogleApiClient.
 
 	/*
 	 * (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onSaveInstanceState(android.os.Bundle)
+	 * @see androidx.fragment.app.FragmentActivity#onSaveInstanceState(android.os.Bundle)
 	 */
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
@@ -234,7 +234,7 @@ public class MainActivity extends ActionBarActivity implements  GoogleApiClient.
 
 	/*
 	 * (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onResume()
+	 * @see androidx.fragment.app.FragmentActivity#onResume()
 	 */
 	@Override
 	protected void onResume() {
@@ -307,7 +307,7 @@ public class MainActivity extends ActionBarActivity implements  GoogleApiClient.
 
 	/*
 	 * (non-Javadoc)
-	 * @see android.support.v4.app.FragmentActivity#onBackPressed()
+	 * @see androidx.fragment.app.FragmentActivity#onBackPressed()
 	 */
 	@Override
 	public void onBackPressed() {
