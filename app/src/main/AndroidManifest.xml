@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android2ee.project.gplus.signin.publicid"
+    android:versionCode="4"
+    android:versionName="1.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+    <!-- Only use because of the call to mPlusClient.getAccountName(); -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Amazing you don't need internet permission when using GooglePlusSignIn -->
+    <!-- I added it here because i try to find the picture so i make a web call to find them -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.android2ee.project.gplus.signin.publicid.MApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.android2ee.project.gplus.signin.publicid.LauncherActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android2ee.project.gplus.signin.publicid.ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.android2ee.project.gplus.signin.publicid.MomentCallBackActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.android.apps.plus.VIEW_DEEP_LINK" />
+
+                <data android:scheme="vnd.google.deeplink" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

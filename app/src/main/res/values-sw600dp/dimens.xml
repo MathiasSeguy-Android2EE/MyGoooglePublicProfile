@@ -1,0 +1,13 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    <!-- Managing owner picture and cover -->
+    <dimen name="cover_height">124dp</dimen>
+    <dimen name="cover_width">222dp</dimen>
+    <dimen name="picture_dim">48dp</dimen>
+    <dimen name="picture_progrss_dim">12dp</dimen>
+
+</resources>

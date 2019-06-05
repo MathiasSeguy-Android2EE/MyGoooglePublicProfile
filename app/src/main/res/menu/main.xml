@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:actionbarcompat_mse="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_disconnect"
+        actionbarcompat_mse:showAsAction="always"
+        android:icon="@drawable/ic_action_disconnect"
+        android:orderInCategory="001"
+        android:title="@string/action_disconnect"/>
+    <item
+        android:id="@+id/action_author"
+        actionbarcompat_mse:showAsAction="ifRoom"
+        android:icon="@drawable/ic_android2ee"
+        android:orderInCategory="002"
+        android:title="@string/action_author">
+        <menu>
+            <item
+                android:id="@+id/action_show_android2ee"
+                android:icon="@drawable/ic_android2ee"
+                android:orderInCategory="0"
+                android:title="Who Is Android2EE"/>
+            <item
+                android:id="@+id/action_show_mathias"
+                android:icon="@drawable/ic_action_author"
+                android:orderInCategory="1"
+                android:title="Who Is Mathias Séguy"/>
+            <item
+                android:id="@+id/action_mail_mathias"
+                android:icon="@drawable/ic_action_email"
+                android:orderInCategory="2"
+                android:title="Email Author"/>
+        </menu>
+    </item>
+    <!-- <item -->
+    <!-- android:id="@+id/action_project" -->
+    <!-- android:enabled="false" -->
+    <!-- android:orderInCategory="003" -->
+    <!-- android:showAsAction="ifRoom" -->
+    <!-- android:title="@string/action_project"/> -->
+
+    <item
+        android:id="@+id/action_revoke"
+        actionbarcompat_mse:showAsAction="never"
+        android:orderInCategory="004"
+        android:title="@string/action_revoke"/>
+    <!-- <item -->
+    <!-- android:id="@+id/action_settings" -->
+    <!-- android:enabled="false" -->
+    <!-- android:orderInCategory="100" -->
+    <!-- android:showAsAction="never" -->
+    <!-- android:title="@string/action_settings"/> -->
+
+</menu>

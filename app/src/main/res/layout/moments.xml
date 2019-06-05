@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moment_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/moment_write_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/moment_edt"
+            style="@style/styleEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="Write the message you want to post on G+"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="4"
+            android:maxLines="10"
+            android:minLines="3"
+            android:scrollbars="vertical"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/moment_send"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/button"
+            android:padding="4dp"
+            android:text="Send" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/moment_empty_txv"
+        style="@style/styleShadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No moment for that user"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/moment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

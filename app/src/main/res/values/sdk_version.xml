@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="preHC">true</bool>
+    <bool name="HoneyComb">false</bool>
+    <bool name="JellyBean">false</bool>
+
+</resources>

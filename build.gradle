@@ -1,0 +1,21 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+
+// use the ext object to add any properties to the project
+project.ext {
+    appName = 'MyGoooglePublicProfile'
+    versionCode = 4
+    versionName = "1.0.4"
+}
+allprojects {
+    repositories {
+        jcenter()
+    }
+}

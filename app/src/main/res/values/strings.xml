@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+
+    <string name="app_name">Who Am I?</string>
+    <string name="action_bar_subtitle">From google point of view</string>
+    <!-- Action -->
+    <string name="action_settings">Settings</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_author">Author</string>
+    <string name="action_project">Project</string>
+    <string name="action_revoke">Revoke</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Sending Mail -->
+
+    <string name="mail_subject">[GooglePublicPorfile]Your subject:</string>
+    <string name="mail_body">Your message:</string>
+    <!-- gPHelper.getGender(gender) + " " + displayedName + " (" -->
+    <!-- + gPHelper.getRelationShip(relationShip) + ")\r\n Lives in" + location+" and speaks "+language -->
+    <!-- Mr Seguy (marié)\r\n Lives in Toulouse and speaks fr. -->
+
+    <string name="owner_major_info">%1$s %2$s (%3$s)\r\n Lives in %4$s and speaks %5$s</string>
+    <!-- Gender -->
+    <string name="female">Mme</string>
+    <string name="male">Mr</string>
+    <string name="other">M?</string>
+    <!-- RelationShip -->
+    <string name="engaged">fiancé</string>
+    <string name="in_a_relation">en couple</string>
+    <string name="civil_union">pacsé</string>
+    <string name="domestic_partner">relation domestique</string>
+    <string name="complicated">compliqué</string>
+    <string name="open_relation">relation ouverte</string>
+    <string name="single">seul</string>
+    <string name="widowed">veuf</string>
+    <string name="married">marié</string>
+    <string name="other_relation">lost in</string>
+
+</resources>

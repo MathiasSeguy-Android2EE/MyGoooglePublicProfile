@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.android2ee.project.gplus.signin.publicid"
+        minSdkVersion 9
+        targetSdkVersion 17
+        versionCode  rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+    signingConfigs{
+        releaseConfig{
+            storeFile file("../delivery/androidKeyStore.jks");
+            storePassword ("mathias110274");
+            keyAlias "tuto";
+            keyPassword "mathias"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def newName = output.outputFile.name
+                    newName = newName.replace("app-", "$rootProject.ext.appName")
+                    newName = newName.replace("release", "_$rootProject.ext.versionName" )
+                    output.outputFile = new File(output.outputFile.parent, newName)
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+}

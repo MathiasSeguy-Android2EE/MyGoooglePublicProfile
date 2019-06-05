@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55555555"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signinbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/owner_name"
+            style="@style/styleShadow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/signoutbutton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:padding="4dp"
+            android:text="g- Deco"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/person_fragment"
+        android:name="com.android2ee.project.gplus.signin.publicid.ui.personfragment.PersonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </fragment>
+
+</LinearLayout>
